@@ -89,7 +89,12 @@ public class Aamt extends javax.swing.JFrame {
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 170, 110, 31));
         getContentPane().add(p, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 170, 98, 31));
 
-        c.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Business", "Econimical" }));
+        c.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Business", "Economical" }));
+        c.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cActionPerformed(evt);
+            }
+        });
         getContentPane().add(c, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 210, 98, 32));
 
         jLabel5.setBackground(new java.awt.Color(0, 0, 0));
@@ -163,6 +168,10 @@ int i=stmt.executeUpdate();
 new Ahome().setVisible(true);
 this.setVisible(false);// TODO add your handling code here:
     }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void cActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cActionPerformed
 
     /**
      * @param args the command line arguments
