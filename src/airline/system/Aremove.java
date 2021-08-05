@@ -67,7 +67,7 @@ public class Aremove extends javax.swing.JFrame {
         jLabel8.setBackground(new java.awt.Color(0, 0, 0));
         jLabel8.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel8.setText("Cancel Request :");
+        jLabel8.setText("System Users");
         getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 130, 30));
 
         tbl_info.setModel(new javax.swing.table.DefaultTableModel(
@@ -172,14 +172,12 @@ public class Aremove extends javax.swing.JFrame {
 
             while(rs.next())
             {
-                   String nm= rs.getNString("name");
-                String em= rs.getNString("email");
-
-             
-                String mb= rs.getNString("mobile_no");
-                String gen= String.valueOf(rs.getDate("gender"));
-                String dob= rs.getNString("dob");
-                String adhar= rs.getNString("adhar");
+                   String nm= rs.getString("name");
+                String em= rs.getString("email");
+                String mb= rs.getString("mobile_no");
+                String gen= rs.getString("gender");
+                String dob= String.valueOf(rs.getDate("dob"));
+                String adhar= rs.getString("adhar");
 
                 String tbData[]={nm,em,mb,gen,dob,adhar};
                 DefaultTableModel tblModel = (DefaultTableModel)tbl_info.getModel();
@@ -218,7 +216,7 @@ public class Aremove extends javax.swing.JFrame {
             else{
                 JOptionPane.showMessageDialog(null,"User not Removed");
             }
-            new Uhome().setVisible(true);
+            new Ahome().setVisible(true);
             this.setVisible(false);
         }
 
