@@ -60,7 +60,7 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="220" y="160" width="100" height="30"/>
+          <AbsoluteConstraints x="230" y="160" width="100" height="30"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -119,11 +119,11 @@
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Password     :"/>
+        <Property name="text" type="java.lang.String" value="Password :"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="220" y="230" width="100" height="30"/>
+          <AbsoluteConstraints x="240" y="230" width="100" height="30"/>
         </Constraint>
       </Constraints>
     </Component>

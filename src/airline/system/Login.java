@@ -56,7 +56,7 @@ public class Login extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("User Name :");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 160, 100, 30));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 160, 100, 30));
 
         Sig.setBackground(new java.awt.Color(0, 0, 0));
         Sig.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -83,8 +83,8 @@ public class Login extends javax.swing.JFrame {
         jLabel4.setBackground(new java.awt.Color(0, 0, 0));
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setText("Password     :");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 230, 100, 30));
+        jLabel4.setText("Password :");
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 230, 100, 30));
 
         t2.setText("jPasswordField1");
         getContentPane().add(t2, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 230, 150, 30));
