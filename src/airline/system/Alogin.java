@@ -41,7 +41,6 @@ public class Alogin extends javax.swing.JFrame {
         txt_adminid = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
-        jDateChooser1 = new com.toedter.calendar.JDateChooser();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -93,7 +92,6 @@ public class Alogin extends javax.swing.JFrame {
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/air_image/adm.jpg"))); // NOI18N
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -3, 650, 450));
-        getContentPane().add(jDateChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 10, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -112,11 +110,11 @@ public class Alogin extends javax.swing.JFrame {
             ResultSet rst=null;
             try{
                 Class.forName("com.mysql.jdbc.Driver");
-                con=DriverManager.getConnection("jdbc:mysql://localhost:3306/project","root","dbms1414");
+                con=DriverManager.getConnection("jdbc:mysql://localhost:3306/arilinedb","root","SQL@2020");
 
                 //    query for insert data into table
 
-                pst=con.prepareStatement("  Select id,password from admin where id=? and password=?");
+                pst=con.prepareStatement("  Select id,pass from admin where id=? and pass=?");
 
                 pst.setString(1,id);
                 pst.setString(2,pass);
@@ -195,7 +193,6 @@ public class Alogin extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton b_adminlogin;
     private javax.swing.JButton jButton1;
-    private com.toedter.calendar.JDateChooser jDateChooser1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
